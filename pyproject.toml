@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "chemunited-quantities"
-version = "0.0.1"
+version = "0.0.2"
 description = "Lab-aware physical quantity primitive for the chemunited ecosystem (wraps pint with chemistry-domain unit registry)."
 readme = "README.md"
 license = { file = "LICENSE" }
