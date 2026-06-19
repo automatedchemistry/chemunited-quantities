@@ -194,8 +194,7 @@ class ChemUnitQuantity(Quantity):
         result = super().__add__(other_q)
         return ChemUnitQuantity(result.magnitude, result.units)
 
-    def __radd__(self, other: object) -> "ChemUnitQuantity":
-        return self.__add__(other)
+    __radd__ = __add__
 
     # ----------- SUBTRACTION (a - b) -----------
 
@@ -220,8 +219,7 @@ class ChemUnitQuantity(Quantity):
         result = super().__mul__(other_q)
         return ChemUnitQuantity(result.magnitude, result.units)
 
-    def __rmul__(self, other: object) -> "ChemUnitQuantity":
-        return self.__mul__(other)
+    __rmul__ = __mul__
 
     # ----------- DIVISION (a / b) -----------
 

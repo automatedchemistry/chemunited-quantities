@@ -1,8 +1,6 @@
 import pytest
-from pint import Quantity
 
 from chemunited_quantities import ChemUnitQuantity, units_for_dimension, ureg
-
 
 # ---------------------------------------------------------------------------
 # Construction
